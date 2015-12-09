@@ -50,6 +50,5 @@ C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\bin\Microsoft.Owin
 C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\obj\Debug\damacana.csprojResolveAssemblyReference.cache
 C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\obj\Debug\damacana.dll
 C:\Users\t-jeffbe\Documents\GitHub\damacana\damacana\damacana\obj\Debug\damacana.pdb
