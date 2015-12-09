@@ -1,95 +1,31 @@
-﻿@using damacana.Models
-@model List<damacana.Models.Product>
-
-@{
-    ViewBag.Title = "Home Page";
+﻿@{
+    ViewBag.Title = "Home";
 }
 
+<div class="jumbotron">
+    <h1>Best Damacana's in the world!</h1>
+    <p class="lead">Great enterprises, great products.</p>
+    <p><a href="~/Views/Products/Index.cshtml" class="btn btn-primary btn-lg">List of Damacana's &raquo;</a></p>
+</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="panel panel-default">
-
-                <div class="panel-heading">
-                    <form class="form-inline" role="search">
-                        <div class="form-group"><input type="text" class="form-control" size="25" id="searchproduct" placeholder="Search products by name">
-                        </div>
-                        <button type="submit" class="btn btn-info">Search</button>
-                    </form>
-                </div>
-
-
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Edit</th>
-                                    <th>Delete</th>
-                                    <th>Add to Cart</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (Product p in Model)
-                                {
-                                <tr>
-                                    <td>@p.Id</td>
-                                    <td>@p.Name</td>
-                                    <td>@p.Price</td>
-                                    <td>
-                                        <a href="#">
-                                            <span class="glyphicon glyphicon-edit"></span>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="#">
-                                            <span class="glyphicon glyphicon-arrow-up"></span>
-                                        </a>
-                                    </td>
-                                </tr>}
-                        </tbody> 
-                         </table>   
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-        <div class="col-sm-4">
-            <div class="panel panel-default">
-
-                <div class="panel-heading"> <h4> Add new product </h4> </div>
-
-                <div class="panel-body">
-                    @using (Html.BeginForm("SaveProduct", "Home", FormMethod.Post))
-                    {
-                        <table>
-                            <tr>
-                                <td>
-                                    <label for="name">Name:</label><br />
-                                    @Html.TextBox("Name")
-                                </td>
-                            </tr>
-                            <td>
-                                <label for="name">Price:</label><br />
-                                @Html.TextBox("Price")
-                            </td>
-                            <tr>
-                                <td><br />
-                                    <button type="submit" class="btn btn-info">Submit</button>
-                                    </td>
-                            </tr>
-                        </table>
-                    }
-                </div>
-                
-            </div>
-        </div></div></div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>

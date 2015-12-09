@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace damacana
+namespace damacana2
 {
     public class BundleConfig
     {
