@@ -323,6 +323,7 @@
     <Content Include="Views\Products\EditProduct.cshtml" />
     <Content Include="Views\Products\ProductEdited.cshtml" />
     <Content Include="Views\Products\DeleteProduct.cshtml" />
+    <Content Include="Views\Products\AddtoCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

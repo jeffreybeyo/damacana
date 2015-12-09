@@ -1,0 +1,13 @@
+﻿@model damacana.Models.Product
+@{
+    ViewBag.Title = "AddtoCart";
+}
+
+<h2>Add to Cart</h2>
+
+<br />
+<div class="alert alert-success" role="alert">Product added to your Cart: <b>@Model.Name</b></div>
+
+<ul class="pager">
+    <li><a href="@Url.Action("Index","Products")">Back to List</a></li>
+</ul>
