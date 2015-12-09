@@ -1,0 +1,13 @@
+﻿@model damacana.Models.Product
+@{
+    ViewBag.Title = "Edited";
+}
+
+<h2>Product Edited</h2>
+    <div class="alert alert-success" role="alert">Product edited: <b>@Model.Name</b></div>
+    <br />
+    <nav>
+        <ul class="pager">
+            <li><a href="@Url.Action("Index")">Back to List</a></li>
+        </ul>
+    </nav>
