@@ -60,5 +60,10 @@ namespace damacana.Controllers
                 }
 
             }
+
+            public ActionResult PurchaseHistory()
+            {
+                return View(db.Purchases);
+            }
         }
     }

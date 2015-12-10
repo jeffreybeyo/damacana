@@ -269,6 +269,8 @@
     <Content Include="Content\bootstrap\bootstrap.less" />
     <Content Include="Content\bootstrap\badges.less" />
     <Content Include="Content\bootstrap\alerts.less" />
+    <None Include="Properties\PublishProfiles\Damacana.pubxml" />
+    <None Include="Properties\PublishProfiles\damacanam.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -327,6 +329,7 @@
     <Content Include="Views\Purchases\Purchase.cshtml" />
     <Content Include="Views\Products\DeleteFromCart.cshtml" />
     <Content Include="Views\Purchases\PurchaseDone.cshtml" />
+    <Content Include="Views\Purchases\PurchaseHistory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

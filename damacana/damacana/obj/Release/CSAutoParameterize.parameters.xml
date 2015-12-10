@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDb)\v11.0;AttachDbFilename=|DataDirectory|\aspnet-damacana-20151209035426.mdf;Initial Catalog=aspnet-damacana-20151209035426;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\t-jeffbe\\Documents\\GitHub\\damacana\\damacana\\damacana\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="damacana.Models.ProductDBContext-Web.config Connection String" description="damacana.Models.ProductDBContext Connection String used in web.config by the application to access the database." defaultValue="damacana.Models.ProductDBContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\t-jeffbe\\Documents\\GitHub\\damacana\\damacana\\damacana\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='damacana.Models.ProductDBContext']/@connectionString" />
+  </parameter>
+  <parameter name="damacana.Models.PurchaseDBContext-Web.config Connection String" description="damacana.Models.PurchaseDBContext Connection String used in web.config by the application to access the database." defaultValue="damacana.Models.PurchaseDBContext_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\t-jeffbe\\Documents\\GitHub\\damacana\\damacana\\damacana\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='damacana.Models.PurchaseDBContext']/@connectionString" />
+  </parameter>
+</parameters>

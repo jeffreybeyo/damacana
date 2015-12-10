@@ -1,0 +1,25 @@
+﻿@using damacana.Models
+@model IEnumerable<damacana.Models.Purchase>
+@{
+    ViewBag.Title = "PurchaseHistory";
+}
+
+<h2>Purchase History</h2>
+
+@foreach (Purchase p in Model)
+{
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Order # @p.Id</h3>
+    </div>
+    <div class="panel-body">
+        <h4 class="media-heading">Total Price: @p.TotalPrice TL</h4>
+        <h4 class="media-heading">Purchase Date: @p.CreatedOn</h4>
+    </div>
+    </div>
+}
+        <nav>
+            <ul class="pager">
+                <li><a href="@Url.Action("Index","Home")">Back to Home</a></li>
+            </ul>
+        </nav>

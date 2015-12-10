@@ -1,0 +1,14 @@
+﻿@model damacana.Models.Product
+@{
+    ViewBag.Title = "SaveProduct";
+}
+
+<h2>Save Product</h2>
+
+<div class="alert alert-success" role="alert">Product added: <b>@Model.Name</b></div>
+<br />
+<nav>
+    <ul class="pager">
+        <li><a href="@Url.Action("index")">Back to List</a></li>
+    </ul>
+</nav>
