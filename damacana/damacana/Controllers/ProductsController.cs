@@ -31,11 +31,11 @@ namespace damacana.Controllers
             db.SaveChanges();
             return View(product);
         }
-        public ActionResult DeleteProduct(string Name)
+        public ActionResult DeleteProduct(int Id)
         {
             foreach (Product p in db.Products)
             {
-                if (p.Name == Name)
+                if (p.Id == Id)
                 {
                     db.Products.Remove(p);
                     break;
@@ -45,12 +45,12 @@ namespace damacana.Controllers
             db.SaveChanges();
             return View();
         }
-        public ActionResult EditProduct(string Name)
+        public ActionResult EditProduct(int Id)
         {
             Product product = new Product();
             foreach (Product p in db.Products)
             {
-                if (p.Name == Name)
+                if (p.Id == Id)
                 {
                     product.Name = p.Name;
                     product.Price = p.Price;
@@ -70,19 +70,18 @@ namespace damacana.Controllers
 
             return View(product);
         }
-        public ActionResult AddtoCart(string Name)
+        public ActionResult AddtoCart(int Id)
         {
             Product product = new Product();
 
             foreach (var p in db.Products)
             {
-                if (p.Name == Name)
+                if (p.Id == Id)
                 {
                     product.Name = p.Name;
                     product.Id = p.Id;
                     product.Price = p.Price;
                     CartProducts.Add(p);
-                    break;
                 }
             }
             return View(product);

@@ -22,9 +22,9 @@
                 <div class="media-body">
                     <h4 class="media-heading">@p.Name</h4>
                     <p>Dogal kaynak suyu <span class="label label-warning">@p.Price ₺</span></p>
-                    <a class="btn btn-default" href="@Url.Action("EditProduct", new { name = p.Name })"><b>Edit</b></a>
-                    <a class="btn btn-default" href="@Url.Action("DeleteProduct", new { name = p.Name })"><b>Delete</b></a>
-                    <a class="btn btn-info" href="@Url.Action("AddtoCart", new { name = p.Name})">Add to cart &nbsp; <span class="glyphicon glyphicon-log-in"></span></a>
+                    <a class="btn btn-default" href="@Url.Action("EditProduct", new { id = p.Id })"><b>Edit</b></a>
+                    <a class="btn btn-default" href="@Url.Action("DeleteProduct", new { id = p.Id })"><b>Delete</b></a>
+                    <a class="btn btn-info" href="@Url.Action("AddtoCart", new { id = p.Id })">Add to cart &nbsp; <span class="glyphicon glyphicon-log-in"></span></a>
                 </div>
             </div>
             </div>
