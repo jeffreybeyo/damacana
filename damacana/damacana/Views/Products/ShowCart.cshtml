@@ -1,0 +1,45 @@
+﻿@using damacana.Models
+@model List<damacana.Models.Product>
+@using System.Collections.Generic
+@{
+    ViewBag.Title = "Show Cart";
+}
+
+<h2>Cart</h2>
+    <br>
+
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Remove from Cart</th>
+                        </tr>
+                    </thead>
+                @foreach (var p in Model)
+                    {
+                    <tbody>
+                        <tr>
+                            <td>@p.Name</td>
+                            <td>@p.Price ₺</td>
+                            <td>1</td>
+                            <td>
+                                <a href="@Url.Action("DeleteFromCart", new { Name = p.Name})"><span class="glyphicon glyphicon-remove"></span></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                }
+                </table>
+            </div>
+        </div>
+<center>
+    <a class="btn btn-info" href="@Url.Action("Purchase","Purchases", new { x = Model })"><b>Purchase Order &raquo;</b></a>
+    <br />
+    <b>Only for a total of:    @Model.Sum(item => item.Price)₺</b>
+</center>
+<ul class="pager">
+        <li><a href="@Url.Action("Index","Products")">Back to List</a></li>
+    </ul>

@@ -88,7 +88,7 @@ namespace damacana.Controllers
             return View(product);
         }
 
-        public ActionResult Cart()
+        public ActionResult ShowCart()
         {
             TempData["Cartlist"] = CartProducts;
             return View(CartProducts);
@@ -107,7 +107,7 @@ namespace damacana.Controllers
             return View();
         }
 
-        public ActionResult Purchase()
+        public ActionResult PurchaseOrder()
         {
             Purchase purchase = new Purchase();
             decimal totalprice = 0;
