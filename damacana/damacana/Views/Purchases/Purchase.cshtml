@@ -1,0 +1,23 @@
+﻿@using damacana.Models
+@model damacana.Models.Purchase
+@{
+    ViewBag.Title = "Purchase";
+}
+
+<h2>Purchase</h2>
+    
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Are you sure?</h3>
+    </div>
+    <div class="panel-body">
+        <a class="btn btn-info" href="@Url.Action("PurchaseDone", "Purchases")"><b>Check out</b></a>
+        <span class="label label-warning"> Total price @Model.TotalPrice</span>
+    </div>
+</div>
+
+    <nav>
+        <ul class="pager">
+            <li><a href="@Url.Action("Index","Products")">Back to List</a></li>
+        </ul>
+    </nav>
