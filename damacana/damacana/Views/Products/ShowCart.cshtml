@@ -36,7 +36,7 @@
             </div>
         </div>
 <center>
-    <a class="btn btn-info" href="@Url.Action("Purchase","Purchases", new { x = Model })"><b>Purchase Order &raquo;</b></a>
+    <a class="btn btn-info" href="@Url.Action("PurchaseOK","Purchases", new { x = Model })"><b>Purchase Order &raquo;</b></a>
     <br />
     <b>Only for a total of:    @Model.Sum(item => item.Price)₺</b>
 </center>

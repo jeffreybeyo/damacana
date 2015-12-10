@@ -326,10 +326,10 @@
     <Content Include="Views\Products\DeleteProduct.cshtml" />
     <Content Include="Views\Products\AddtoCart.cshtml" />
     <Content Include="Views\Products\ShowCart.cshtml" />
+    <Content Include="Views\Purchases\PurchaseOK.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Purchases\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
